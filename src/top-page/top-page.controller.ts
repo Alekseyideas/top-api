@@ -13,8 +13,8 @@ import { TopPageModel } from './top-page.model';
 
 @Controller('top-page')
 export class TopPageController {
+  constructor() {}
   @Post('create')
-  //  Omit<ProductModel, '_id' исключить поле _id;
   async create(@Body() dto: Omit<TopPageModel, '_id'>) {}
 
   @Get(':id')
