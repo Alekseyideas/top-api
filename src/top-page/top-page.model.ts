@@ -1,6 +1,7 @@
 import { prop } from '@typegoose/typegoose';
 import { Base, TimeStamps } from '@typegoose/typegoose/lib/defaultClasses';
 
+// nest g class top-page/top-page.model --no-spec
 export enum TopLevelCategory {
   Curses,
   Services,

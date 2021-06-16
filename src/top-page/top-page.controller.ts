@@ -11,6 +11,7 @@ import {
 import { FindTopPageDto } from './dto/find-top-page.dto';
 import { TopPageModel } from './top-page.model';
 
+// nest g controller top-page --no-spec
 @Controller('top-page')
 export class TopPageController {
   constructor() {}
