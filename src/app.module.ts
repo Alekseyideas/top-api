@@ -12,6 +12,7 @@ import { TopPageModule } from './top-page/top-page.module';
 @Module({
   imports: [
     ConfigModule.forRoot(),
+    // forRootAsync - позволяет сделать DI при инициализации и асинхронно выполнить подключение, например для чтения конфигурации
     TypegooseModule.forRootAsync({
       imports: [ConfigModule],
       inject: [ConfigService],
